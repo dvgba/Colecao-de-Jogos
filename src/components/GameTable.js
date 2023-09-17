@@ -99,6 +99,14 @@ function GameTable ( {games, handleDeleteGame, setShowForm }) {
                                         >
                                             Excluir
                                         </Button>
+                                        <Button
+                                            variant="outlined"
+                                            color="primary" // Cor de fundo diferente para o botão de edição
+                                            startIcon={<EditIcon />} // Substitua EditIcon pelo ícone desejado
+                                            onClick={() => handleEditGame(game)} // Função de edição
+                                        >
+                                            Editar
+                                        </Button>
                                     </TableCell>
                                 </TableRow>
                             ))
